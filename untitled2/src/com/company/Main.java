@@ -130,7 +130,7 @@ public class Main {
                         }
                     }
                 }
-                for (int j = 1; j <= c.length-1; j++){
+                for (int j = 0; j <= c.length-1; j++){
                     for (int i = 0; i < c.length-1; i++){
                         if (c[i][j] == c[i+1][j] && c[i][j] != 0 && c[i+1][j] != 0) {
                             c[i][j] *= 2;
@@ -162,7 +162,7 @@ public class Main {
                         }
                     }
                 }
-                for (int j = c.length-1; j >= 1; j--){
+                for (int j = c.length-1; j >= 0; j--){
                     for (int i = c.length-1; i >= 1; i--){
                         if (c[i][j] == c[i-1][j] && c[i][j] != 0 && c[i-1][j] != 0) {
                             c[i][j] *= 2;
