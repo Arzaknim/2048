@@ -62,7 +62,7 @@ public class Main {
                     }
                     }
                 for (int i = c.length-1; i >= 0; i--){
-                    for (int j = c.length-1; j > 0; j--){
+                    for (int j = c.length-1; j >= 1; j--){
                         if (c[i][j] == c[i][j-1] && c[i][j] != 0 && c[i][j-1] != 0) {
                             c[i][j] *= 2;
                             c[i][j - 1] = 0;
